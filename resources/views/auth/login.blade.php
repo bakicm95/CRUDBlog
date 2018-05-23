@@ -38,6 +38,8 @@
                 <button class="button is-primary is-outlined is-fullwidth m-t-30">Log In</button>
             </form>
 
+            <p class="has-text-centered m-t-20"><a href="/register">Don't have account? Register now!</a></p>
+
         </div> {{-- end of .card-content --}}
     </div>  {{-- end of .card --}}
     {{-- <h5 class="has-text-centered m-t-20"><a href="{{ route('password.request') }}" class="is-muted">Forgot Your Password?</a></h5> --}}

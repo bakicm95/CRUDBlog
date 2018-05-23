@@ -67,6 +67,7 @@
 						@if(count($posts) == 0) {{-- If User have no posts --}}
 							<h1><span style="border: 1px solid red; border-radius: 25px; padding: 10px; font-size: 20px; font-weight: normal;">You have no posts created yet, if You have no permission, Your rank is too low.</span></h1>
 						@endif
+						
 					</div>
 				</div>
 			</div> {{-- end of .columns --}}

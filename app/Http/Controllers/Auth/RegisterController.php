@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use LaratrustUserTrait;
+use App\Role;
 
 class RegisterController extends Controller
 {
@@ -35,11 +37,11 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {   
-        // Do not want free user's registrations.
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {   
+    //     // Do not want free user's registrations.
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Get a validator for an incoming registration request.

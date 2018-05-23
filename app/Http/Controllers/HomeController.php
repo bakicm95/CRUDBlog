@@ -23,8 +23,13 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        LaraFlash::add()->content('Hello User')->priority(6)->type('Info');
+    {   
+       // Check if User have Role, if not, make him Author.
+       if(count(auth()->user()->roles) == 0){
+            auth()->user()->syncRoles(explode(',', 4));
+       }
+
+        LaraFlash::add()->content('Hello User')->priority(1)->type('Info');
         return view('home');
     }
 }

@@ -2,6 +2,8 @@
 
 Auth::routes();
 Route::get('/', 'UserPostsController@index');
+Route::get('/user_posts/{id}', 'UserPostsController@show')->name('user_posts_show');
+Route::post('/user_posts/{post}/', 'CommentController@store')->name('make_comm');
 
 Route::prefix('manage')->middleware('role:superadministrator|administrator|editor|author')->group(function(){
 	Route::get('/', 'ManageController@index');

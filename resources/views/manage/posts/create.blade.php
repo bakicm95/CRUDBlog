@@ -35,8 +35,7 @@
               
               {{-- Post Content --}}
               <b-field class="m-t-40">
-                <b-input type="textarea" name="content"
-                    placeholder="Compose your masterpiece..." rows="20">
+                <b-input type="textarea" name="content" placeholder="Compose your masterpiece..." rows="20">
                 </b-input>
               </b-field>
             </div> <!-- end of .column.is-three-quarters -->
