@@ -87,8 +87,8 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
+            </div> {{-- end of .column --}}
+          </div> {{-- end of .columns --}}
 
           <button class="button is-success">Create Permission</button>
         </form>

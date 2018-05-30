@@ -26,7 +26,7 @@
 								<div class="field">
 									<p class="control">{{-- Role Display Name --}}
 										<label for="display_name" class="label">Name (Human Readable)</label>
-										<input type="text" class="input" name="display_name" id="display_name" value="{{ old('display_name') 
+										<input type="text" class="input" name="display_name" id="display_name" value="{{ old('display_name') }}">
 									</p>
 								</div>
 

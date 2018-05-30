@@ -8,7 +8,7 @@
 			<h1 class="title">Edit {{ $role->display_name }}</h1>
 		</div>
 		<div class="column" style="margin-left: -20px;">
-			<a href="{{ route('roles.edit', $role->id) }}" class="button is-primary is-pulled-right"><i class="fa fa-user-plus m-r-10"> Edit this Role</i></a>
+			
 		</div>
 	</div> {{-- end of .columns --}}
 

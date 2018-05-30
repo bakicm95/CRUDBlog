@@ -4,7 +4,7 @@
 
 
 <div class="flex-container p-t-10">
-	<div class="card">
+	<div class="card m-t-20">
 		<div class="columns p-t-10 p-l-5 p-b-10">
 			{{-- Profile Info Column --}}
 			<div class="column">

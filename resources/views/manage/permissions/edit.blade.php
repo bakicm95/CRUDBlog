@@ -9,7 +9,7 @@
       
       {{-- Edit Permission Button --}}
       <div class="column">
-        <a href="{{ route('permissions.edit', $permission->id) }}" class="button is-primary is-pulled-right"><i class="fa fa-edit m-r-10"></i> Edit Permission</a>
+       
       </div>
     </div>
 
