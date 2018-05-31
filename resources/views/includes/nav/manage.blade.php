@@ -5,14 +5,14 @@
 			<li><a href="{{ route('manage.dashboard') }}" class="{{ Nav::isRoute('manage.dashboard') }}">Dashboard</a></li>
 		</ul>
 			
-		@foreach(auth()->user()->allPermissions() as $perm) {{-- Check for User's Permissions --}}
-			@if($perm['name'] == 'create-post')
+			{{-- If User has a permission 'create-post' --}}
+			@if(auth()->user()->can(['create-post']))
 				<p class="menu-label">Content</p>
 				<ul class="menu-list">
 					<li><a href="{{ route('posts.index') }}" class="{{ Nav::isResource('posts', 2) }}">Blog Posts</a></li>
 				</ul>
 			@endif
-		@endforeach
+		
 
 		@role('superadministrator|administrator') {{-- Display if User has role superadministrator or adminsitrator --}}
 			<p class="menu-label">Administration</p>

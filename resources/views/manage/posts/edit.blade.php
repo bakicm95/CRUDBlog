@@ -1,7 +1,7 @@
 @extends('layouts.manage')
 
-@foreach(auth()->user()->allPermissions() as $perm)
-  @if($perm['name'] == 'create-post')
+
+  @if(auth()->user()->can(['create-post']))
     @section('content')
       <div class="flex-container">
         <div class="columns m-t-10 m-b-0">
@@ -81,7 +81,7 @@
       </div> <!-- end of .flex-container -->
     @endsection
   @endif
-@endforeach
+
 
 
 {{-- Scripts section --}}
